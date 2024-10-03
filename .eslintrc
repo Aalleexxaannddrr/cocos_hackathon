@@ -1,0 +1,26 @@
+{
+    "root": true,
+    "parser": "@typescript-eslint/parser",
+    "plugins": ["@typescript-eslint"],
+    "extends": ["eslint:recommended", "plugin:react/recommended"],
+    "rules": {
+        "quotes": ["error", "single", { "avoidEscape": true }],
+        "semi": "error",
+        "curly": "error",
+        "no-mixed-spaces-and-tabs": "error",
+        "max-len": [
+            "warn",
+            {
+                "code": 100,
+                "ignoreTemplateLiterals": true,
+                "tabWidth": 4,
+                "ignoreStrings": true,
+                "ignoreRegExpLiterals": true,
+                "ignoreComments": true
+            }
+        ],
+        "object-curly-spacing": ["error", "always"],
+        "space-in-parens": ["error", "never"],
+        "no-console": ["error", { "allow": ["warn", "error"] }]
+    }
+}
