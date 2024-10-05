@@ -1,3 +1,9 @@
+import { Games } from '../../widgets/games';
+
 export const Main = () => {
-    return <div>MAIN</div>;
+    return (
+        <div>
+            <Games />
+        </div>
+    );
 };
