@@ -1,0 +1,21 @@
+.box {
+    width: 315px;
+}
+
+.title {
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+.player {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+}
+
+.button {
+    background-color: #f4f4f5 !important;
+    width: 100%;
+    font-size: 14px;
+}

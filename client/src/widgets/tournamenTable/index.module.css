@@ -1,0 +1,64 @@
+.box {
+    width: 315px;
+}
+
+.title {
+    font-size: 18px;
+}
+
+.select {
+    margin-bottom: 16px;
+}
+
+.table {
+    margin-bottom: 16px;
+}
+
+.table * {
+    font-size: 12px;
+}
+
+.table th {
+    background-color: transparent;
+    color: #000;
+    font-weight: 400;
+    padding: 0;
+}
+
+.table tr {
+    border-bottom: 1px solid #f4f4f5;
+}
+
+.table td {
+    padding: 4px 0;
+}
+
+.pale {
+    color: #d4d4d8 !important;
+}
+
+.first {
+    border-left: 1px solid #ff4747;
+}
+
+.teamInfoCell {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.number {
+    padding: 0 9px;
+}
+
+.img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.button {
+    background-color: #f4f4f5 !important;
+    width: 100%;
+    font-size: 14px;
+}

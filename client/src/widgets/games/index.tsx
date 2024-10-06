@@ -11,32 +11,64 @@ const gamesMock: Game[] = [
     {
         id: '0',
         teamsInfo: [
-            { team: { id: 't0', name: 'Розгруз', img: mockImg2 }, score: 1, guest: false },
-            { team: { id: 't1', name: 'Кокос Групп', img: mockImg1 }, score: 0, guest: true },
+            {
+                team: { id: 't0', name: 'Розгруз', img: mockImg2, players: [] },
+                score: 1,
+                guest: false,
+            },
+            {
+                team: { id: 't1', name: 'Кокос Групп', img: mockImg1, players: [] },
+                score: 0,
+                guest: true,
+            },
         ],
         status: EStatuses.finished,
     },
     {
         id: '1',
         teamsInfo: [
-            { team: { id: 't1', name: 'Кокос Групп', img: mockImg1 }, score: 4, guest: true },
-            { team: { id: 't2', name: 'ФК Добрый', img: mockImg2 }, score: 3, guest: false },
+            {
+                team: { id: 't1', name: 'Кокос Групп', img: mockImg1, players: [] },
+                score: 4,
+                guest: true,
+            },
+            {
+                team: { id: 't2', name: 'ФК Добрый', img: mockImg2, players: [] },
+                score: 3,
+                guest: false,
+            },
         ],
         status: EStatuses.finished,
     },
     {
         id: '2',
         teamsInfo: [
-            { team: { id: 't3', name: 'Эксклюзив', img: mockImg2 }, score: 1, guest: false },
-            { team: { id: 't1', name: 'Кокос Групп', img: mockImg1 }, score: 4, guest: true },
+            {
+                team: { id: 't3', name: 'Эксклюзив', img: mockImg2, players: [] },
+                score: 1,
+                guest: false,
+            },
+            {
+                team: { id: 't1', name: 'Кокос Групп', img: mockImg1, players: [] },
+                score: 4,
+                guest: true,
+            },
         ],
         status: EStatuses.finished,
     },
     {
         id: '3',
         teamsInfo: [
-            { team: { id: 't4', name: 'Транслом', img: mockImg2 }, score: 0, guest: false },
-            { team: { id: 't1', name: 'Кокос Групп', img: mockImg1 }, score: 4, guest: true },
+            {
+                team: { id: 't4', name: 'Транслом', img: mockImg2, players: [] },
+                score: 0,
+                guest: false,
+            },
+            {
+                team: { id: 't1', name: 'Кокос Групп', img: mockImg1, players: [] },
+                score: 4,
+                guest: true,
+            },
         ],
         status: EStatuses.finished,
     },
