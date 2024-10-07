@@ -1,0 +1,97 @@
+.box {
+    width: 650px;
+    padding: 32px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 14px;
+}
+
+.ligueName {
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.datePlace {
+    display: flex;
+    gap: 12px;
+    font-size: 14px;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.divider {
+    height: 20px;
+    width: 1px;
+    background-color: #f4f4f5;
+}
+
+.teamsTime {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 24px;
+}
+
+.team {
+    width: 135px;
+    text-align: center;
+}
+
+.img {
+    width: 72px;
+    height: 72px;
+    object-fit: contain;
+    margin: 0 auto 12px auto;
+}
+
+.teamName {
+    font-size: 21px;
+}
+
+.place {
+    font-size: 18px;
+    color: #d4d4d8;
+}
+
+.timeCount {
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.count {
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.time {
+    font-size: 20px;
+}
+
+.timeCaption {
+    display: flex;
+    gap: 18px;
+    font-size: 8px;
+}
+
+.buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.button {
+    background-color: #f4f4f5 !important;
+    font-size: 14px;
+}
+
+.button.red {
+    background-color: #e32726 !important;
+    color: #fff;
+}

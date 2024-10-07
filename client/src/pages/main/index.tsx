@@ -1,7 +1,9 @@
 import { Games } from '../../widgets/games';
 import { News } from '../../widgets/news';
 import { Players } from '../../widgets/players';
+import { Slides } from '../../widgets/slides';
 import { TournamentTable } from '../../widgets/tournamenTable';
+import { UpcomingGame } from '../../widgets/upcomingGame';
 import s from './index.module.css';
 
 export const Main = () => {
@@ -11,7 +13,10 @@ export const Main = () => {
                 <Games />
                 <Players />
             </div>
-            <div></div>
+            <div>
+                <UpcomingGame />
+                <Slides />
+            </div>
             <div>
                 <News />
                 <TournamentTable />

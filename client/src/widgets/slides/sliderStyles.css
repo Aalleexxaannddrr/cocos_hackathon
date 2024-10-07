@@ -1,0 +1,20 @@
+.slidesContainer .slick-dots {
+    bottom: 0;
+}
+
+.slidesContainer .slick-dots li button:before {
+    color: #fff;
+    opacity: 1;
+}
+
+.slidesContainer .slick-dots li button:hover:before {
+    color: #e32726;
+}
+
+.slidesContainer .slick-dots li.slick-active button:before {
+    color: #e32726;
+}
+
+.slidesContainer .slick-dots li {
+    width: 4px;
+}
