@@ -1,0 +1,35 @@
+.games {
+    width: 315px;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 18px;
+}
+
+.input {
+    height: 40px;
+    margin-bottom: 12px;
+}
+
+.tabs {
+    margin-bottom: 16px;
+}
+
+.tabs span {
+    background-color: #ff4747;
+}
+
+.tabs button {
+    width: 133px;
+}
+
+.subtitle {
+    font-size: 14px;
+}
+
+.button {
+    background-color: #f4f4f5 !important;
+    width: 100%;
+    font-size: 14px;
+}
