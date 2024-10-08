@@ -4,6 +4,7 @@ import { Players } from '../../widgets/players';
 import { Slides } from '../../widgets/slides';
 import { TournamentTable } from '../../widgets/tournamenTable';
 import { UpcomingGame } from '../../widgets/upcomingGame';
+import { Video } from '../../widgets/video';
 import s from './index.module.css';
 
 export const Main = () => {
@@ -16,6 +17,7 @@ export const Main = () => {
             <div>
                 <UpcomingGame />
                 <Slides />
+                <Video />
             </div>
             <div>
                 <News />
