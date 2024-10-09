@@ -1,4 +1,4 @@
-import logo from './assets/logo.png';
+import logo from '../../shared/assets/logo.png';
 import loup from './assets/loup.svg';
 import login from './assets/login.svg';
 import s from './index.module.css';
@@ -7,8 +7,7 @@ export const Header = () => {
     return (
         <header className={s.header}>
             <a href="/" className={s.logoContainer}>
-                <img src={logo} alt="Logo" />
-                <div>Кокос Групп</div>
+                <img src={logo} alt="Logo" className={s.logo} />
             </a>
             <nav className={s.nav}>
                 <a href="/news">Новости</a>

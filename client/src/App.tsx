@@ -11,27 +11,31 @@ import { Team } from './pages/team';
 import { Header } from './widgets/header';
 import { Media } from './pages/media';
 import { NextUIProvider } from '@nextui-org/react';
+import { Footer } from './widgets/footer';
 
 function App() {
     return (
         <>
             <Header />
-            <NextUIProvider>
-                <BrowserRouter>
-                    <Routes>
-                        <Route path="/" element={<Main />} />
-                        <Route path="/news" element={<News />} />
-                        <Route path="/team" element={<Team />} />
-                        <Route path="/games" element={<Games />} />
-                        <Route path="/store" element={<Store />} />
-                        <Route path="/about" element={<About />} />
-                        <Route path="/media" element={<Media />} />
-                        <Route path="/news-item" element={<NewsItem />} />
-                        <Route path="/player" element={<Player />} />
-                        <Route path="/profile" element={<Profile />} />
-                    </Routes>
-                </BrowserRouter>
-            </NextUIProvider>
+            <main>
+                <NextUIProvider>
+                    <BrowserRouter>
+                        <Routes>
+                            <Route path="/" element={<Main />} />
+                            <Route path="/news" element={<News />} />
+                            <Route path="/team" element={<Team />} />
+                            <Route path="/games" element={<Games />} />
+                            <Route path="/store" element={<Store />} />
+                            <Route path="/about" element={<About />} />
+                            <Route path="/media" element={<Media />} />
+                            <Route path="/news-item" element={<NewsItem />} />
+                            <Route path="/player" element={<Player />} />
+                            <Route path="/profile" element={<Profile />} />
+                        </Routes>
+                    </BrowserRouter>
+                </NextUIProvider>
+            </main>
+            <Footer />
         </>
     );
 }

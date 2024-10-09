@@ -15,9 +15,12 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+main {
+    padding: 0 40px 80px 40px;
+}
+
 body {
     background-color: #f4f4f5;
-    padding: 34px 40px;
     margin: 0;
 }
 

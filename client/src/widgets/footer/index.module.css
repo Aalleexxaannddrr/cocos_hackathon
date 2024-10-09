@@ -1,0 +1,13 @@
+.footer {
+    padding: 60px 40px;
+    background-color: #fff;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 184px;
+}

@@ -6,6 +6,7 @@ import mock2 from './mockAssets/mock2.png';
 import { AngleLeft } from '../../shared/ui/icons/angleLeft';
 import s from './index.module.css';
 import cx from 'classnames';
+import { useEffect, useRef, useState } from 'react';
 
 const videoMock: IVideo[] = [
     {
@@ -65,6 +66,33 @@ const videoMock: IVideo[] = [
 ];
 
 export const Video = () => {
+    const ref = useRef<HTMLDivElement | null>(null);
+    const [left, setLeft]= useState(true);
+    const [rigth, setRight]= useState(false);
+
+    useEffect(() => {
+        const el = ref.current;
+        if (!el) {
+            return;
+        }
+        const onScroll = () => {
+            setLeft(el.scrollLeft === 0)
+            setRight(el.scrollLeft === el.scrollWidth - el.clientWidth)
+        }
+        el.addEventListener('scroll', onScroll)
+        return () => {
+            el.removeEventListener('scroll', onScroll)
+        }
+    }, []);
+
+    const onArrowClick = (dir: 1 | -1) => {
+        const el = ref.current;
+        if (!el) {
+            return;
+        }
+        el.scroll(el.scrollLeft + 500 * dir, 0)
+    }
+
     return (
         <Box dividers className={s.box}>
             <div className={s.head}>
@@ -74,7 +102,7 @@ export const Video = () => {
                 </a>
             </div>
             <div>
-                <div className={s.videos}>
+                <div className={s.videos} ref={ref}>
                     {videoMock.map((video) => (
                         <a key={video.id} href={video.url} className={s.video}>
                             <img className={s.img} src={video.previewImg} />
@@ -92,8 +120,8 @@ export const Video = () => {
                     ))}
                 </div>
                 <div className={s.arrows}>
-                    <button><AngleLeft /></button>
-                    <button><AngleRight /></button>
+                    <button className={s.arrowBtn} disabled={left} onClick={() => onArrowClick(-1)}><AngleLeft /></button>
+                    <button className={s.arrowBtn} disabled={rigth} onClick={() => onArrowClick(1)}><AngleRight /></button>
                 </div>
             </div>
         </Box>

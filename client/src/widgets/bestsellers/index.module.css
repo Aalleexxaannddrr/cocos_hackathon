@@ -16,84 +16,52 @@
     font-size: 16px;
 }
 
-.allVideos {
+.allMerch {
     display: flex;
     align-items: center;
     font-size: 14px;
     gap: 8px;
 }
 
-.videos {
+.bestsellers {
     display: flex;
     overflow-x: scroll;
-    gap: 24px;
+    gap: 12px;
     padding-top: 12px;
     padding-bottom: 30px;
     margin-bottom: 6px;
     scroll-behavior: smooth;
 }
 
-.videos::-webkit-scrollbar {
+.bestsellers::-webkit-scrollbar {
     display: block;
     height: 4px;
 }
 
-.videos::-webkit-scrollbar-track {
+.bestsellers::-webkit-scrollbar-track {
     margin-right: 60px;
     background-color: #f4f4f5;
     border-radius: 4px;
 }
 
-.videos::-webkit-scrollbar-thumb {
+.bestsellers::-webkit-scrollbar-thumb {
     background-color: #e32726;
     border-radius: 4px;
 }
 
-.video {
+.bestseller {
     min-width: 240px;
 }
 
 .img {
     width: 240px;
-    height: 160px;
+    height: 240px;
     object-fit: contain;
     border-radius: 8px;
     margin-bottom: 8px;
 }
 
-.badgeDate {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-bottom: 8px;
-}
-
-.badge {
-    padding: 4px 8px;
-    border-radius: 9999px;
-    color: #fff;
-    width: fit-content;
-    font-size: 12px;
-}
-
-.badge.green {
-    background-color: #17c964;
-}
-
-.badge.purple {
-    background-color: #7828c8;
-}
-
-.badge.red {
-    background-color: #e32726;
-}
-
-.date {
-    font-size: 12px;
-    color: #d4d4d8;
-}
-
-.description {
+.name {
     font-size: 14px;
     line-height: 20px;
     font-weight: 500;
@@ -103,11 +71,13 @@
     overflow: hidden;
     text-overflow: ellipsis;
     margin-bottom: 8px;
+    color: #000;
 }
 
-.watch {
+.price {
     font-size: 14px;
-    color: #d4d4d8;
+    color: #000;
+    font-weight: 700;
 }
 
 .arrows {
